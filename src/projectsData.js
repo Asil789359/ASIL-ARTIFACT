@@ -39,9 +39,9 @@ import typeVisual1 from "./assets/img/works/type/visual1.jpg"
 
 
 import Lea from "./components/projects/Lea"
-import LeaCover from "./assets/img/works/covers/Lea.jpg"
-import LeaCoverSmall from "./assets/img/works/covers-small/Lea-min.jpg"
-import LeaVisual1 from "./assets/img/works/Lea/visual1.jpg"
+// import LeaCover from "./assets/img/works/covers/Lea.jpg"
+// import LeaCoverSmall from "./assets/img/works/covers-small/Lea-min.jpg"
+// import LeaVisual1 from "./assets/img/works/Lea/visual1.jpg"
 
 import Ley from "./components/projects/Ley"
 import LeyCover from "./assets/img/works/covers/Ley.jpg"

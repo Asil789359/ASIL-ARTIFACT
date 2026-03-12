@@ -16,10 +16,11 @@ import bohincCover from "./assets/img/works/covers/bohinc.jpg"
 import bohincCoverSmall from "./assets/img/works/covers-small/bohinc-min.jpg"
 import bohincVisual1 from "./assets/img/works/bohinc/visual1.jpg"
 
-import Yeng from "./components/projects/Yeng"
-import YengCover from "./assets/img/works/covers/yeng.jpg"
-import YengCoverSmall from "./assets/img/works/covers-small/yeng-min.jpg"
-import YengVisual1 from "./assets/img/works/Yeng/visual1.jpg"
+// Yeng import commented to fix build
+// import Yeng from "./components/projects/Yeng"
+// import YengCover from "./assets/img/works/covers/yeng.jpg"
+// import YengCoverSmall from "./assets/img/works/covers-small/yeng-min.jpg"
+// import YengVisual1 from "./assets/img/works/Yeng/visual1.jpg"
 
 import Hublot from "./components/projects/Hublot"
 import hublotCover from "./assets/img/works/covers/hublot.jpg"
@@ -80,15 +81,15 @@ import PierreCoverSmall from "./assets/img/works/covers-small/Pierre-min.jpg"
 import PierreVisual1 from "./assets/img/works/Pierre/visual1.jpg"
 
 let projectsData = [
-  {
-    name: "Yeng",
-    path: "yeng",
-    title: "Yeng",
-    coverImg: YengCover,
-    coverImgSmall: YengCoverSmall,
-    visual1: YengVisual1,
-    component: Yeng,
-    date: "Apr. 2025",
+//     {
+    //     name: "Yeng",
+    //     path: "yeng",
+    //     title: "Yeng",
+    //     coverImg: YengCover,
+    //     coverImgSmall: YengCoverSmall,
+    //     visual1: YengVisual1,
+    //     component: Yeng,
+    //     date: "Apr. 2025",
     role: "Designer, Dev",
     techs: ["Figma, React"],
     websiteLink: "https://yeng.vercel.app/",

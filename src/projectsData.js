@@ -44,9 +44,9 @@ import Lea from "./components/projects/Lea"
 // import LeaVisual1 from "./assets/img/works/Lea/visual1.jpg"
 
 import Ley from "./components/projects/Ley"
-import LeyCover from "./assets/img/works/covers/Ley.jpg"
-import LeyCoverSmall from "./assets/img/works/covers-small/Ley-min.jpg"
-import LeyVisual1 from "./assets/img/works/Ley/visual1.jpg"
+// import LeyCover from "./assets/img/works/covers/Ley.jpg"
+// import LeyCoverSmall from "./assets/img/works/covers-small/Ley-min.jpg"
+// import LeyVisual1 from "./assets/img/works/Ley/visual1.jpg"
 
 
 // import Poterie from "./components/projects/Poterie"

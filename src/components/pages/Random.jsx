@@ -194,7 +194,7 @@ const Container = styled.div`
 `;
 
 function visibleBox(camera, z) {
-  const t = Math.tan(THREE.Math.degToRad(camera.fov) / 2);
+  const t = Math.tan(THREE.MathUtils.degToRad(camera.fov) / 2);
   const height = t * 2 * (camera.position.z - z);
   const width = height * camera.aspect;
   return { width, height };

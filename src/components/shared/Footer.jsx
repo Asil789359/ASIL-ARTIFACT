@@ -3,7 +3,6 @@ import React from "react";
 import Headline from "./modules/Headline";
 import styled from "styled-components";
 import { marginPage } from "../../styles/globalCustom";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const Container = styled.div`
   ${marginPage};

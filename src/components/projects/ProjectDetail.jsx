@@ -3,7 +3,7 @@ import React, { useLayoutEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import PageTemplate from "../pages/PageTemplate";
 import projectsData from "../../projectsData";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Parallax } from "react-parallax";
 
 const StyledProjectDetail = styled.div`

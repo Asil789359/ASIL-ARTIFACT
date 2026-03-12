@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Headline from "../../shared/modules/Headline";
 import Slider from "../../shared/Slider";
-import ArrowDownSVG from "../../../assets/icons/arrow_down.svg?component";
+import ArrowDownSVG from "../../../assets/icons/arrow_down.svg?react";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
 import PageTemplate from "../PageTemplate";
 import HomeProjects from "./ProjectsPreview";

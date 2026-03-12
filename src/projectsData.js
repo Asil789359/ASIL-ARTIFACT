@@ -55,24 +55,24 @@ import Ley from "./components/projects/Ley"
 // import PoterieVisual1 from "./assets/img/works/Poterie/visual1.jpg"
 
 import Nicolas from "./components/projects/Nicolas"
-import NicolasCover from "./assets/img/works/covers/Nico.jpg"
-import NicolasCoverSmall from "./assets/img/works/covers-small/Nico-min.jpg"
-import NicolasVisual1 from "./assets/img/works/Nico/visual1.jpg"
+import NicolasCover from "./assets/img/works/covers/nico.jpg"
+import NicolasCoverSmall from "./assets/img/works/covers-small/nico-min.jpg"
+import NicolasVisual1 from "./assets/img/works/nico/visual1.jpg"
 
 import Grace from "./components/projects/Grace"
-import GraceCover from "./assets/img/works/covers/Grace.jpg"
-import GraceCoverSmall from "./assets/img/works/covers-small/Grace-min.jpg"
-import GraceVisual1 from "./assets/img/works/Grace/visual1.jpg"
+import GraceCover from "./assets/img/works/covers/grace.jpg"
+import GraceCoverSmall from "./assets/img/works/covers-small/grace-min.jpg"
+import GraceVisual1 from "./assets/img/works/grace/visual1.jpg"
 
 import Pxp from "./components/projects/Pxp"
-import PxpCover from "./assets/img/works/covers/Pxp.jpg"
-import PxpCoverSmall from "./assets/img/works/covers-small/Pxp-min.jpg"
-import PxpVisual1 from "./assets/img/works/Pxp/visual1.jpg"
+import PxpCover from "./assets/img/works/covers/pxp.jpg"
+import PxpCoverSmall from "./assets/img/works/covers-small/pxp-min.jpg"
+import PxpVisual1 from "./assets/img/works/pxp/visual1.jpg"
 
 import Pierre from "./components/projects/Pierre"
-import PierreCover from "./assets/img/works/covers/Pierre.jpg"
-import PierreCoverSmall from "./assets/img/works/covers-small/Pierre-min.jpg"
-import PierreVisual1 from "./assets/img/works/Pierre/visual1.jpg"
+import PierreCover from "./assets/img/works/covers/pierre.jpg"
+import PierreCoverSmall from "./assets/img/works/covers-small/pierre-min.jpg"
+import PierreVisual1 from "./assets/img/works/pierre/visual1.jpg"
 
 let projectsData = [
   {

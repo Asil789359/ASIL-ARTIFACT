@@ -2,7 +2,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import React, { useMemo, useRef } from "react";
-import { Switch, Route } from "react-router";
+import { Routes, Route } from "react-router-dom";
 import { useMediaQuery } from "beautiful-react-hooks";
 
 import projectData from "./projectsData";
@@ -29,15 +29,13 @@ const App = () => {
     duration: 2000,
   });
   const containerRef = useRef(null);
-  let projectRoutes = useMemo(
+let projectRoutes = useMemo(
     () =>
       projectData.map((project, index) => (
         <Route
-          path={`/works/${project.path}`}
           key={index}
-          component={(props) => (
-            <ProjectDetail index={index} project={project} {...props} />
-          )}
+          path={`/works/${project.path}`}
+          element={<ProjectDetail index={index} project={project} />}
         />
       )),
     []
@@ -51,24 +49,20 @@ const App = () => {
       <Header />
       <StyleSwitcher />
       <div data-app-container ref={containerRef}>
-        <Route
-          render={({ location }) => (
-            <AnimatePresence exitBeforeEnter initial={true}>
-              <Switch location={location} key={location.pathname}>
-                {projectRoutes}
-                <Route path="/cgv" component={CGV} />
-                <Route path="/mentions" component={Mentions} />
-                <Route path="/about" exact component={Home} />
-                <Route path="/courses" exact component={Courses} />
-                <Route path="/labs" exact component={Labs} />
-                <Route path="/Capsule" component={Capsule} />
-                <Route path="/random" exact component={Random} />
-                <Route path="/" component={Works} />
-                {/* legals */}
-              </Switch>
-            </AnimatePresence>
-          )}
-        />
+        <AnimatePresence exitBeforeEnter initial={true}>
+          <Routes>
+            {projectRoutes}
+            <Route path="/cgv" element={<CGV />} />
+            <Route path="/mentions" element={<Mentions />} />
+            <Route path="/about" element={<Home />} />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/labs" element={<Labs />} />
+            <Route path="/Capsule" element={<Capsule />} />
+            <Route path="/random" element={<Random />} />
+            <Route path="/" element={<Works />} />
+            {/* legals */}
+          </Routes>
+        </AnimatePresence>
       </div>
     </>
   );

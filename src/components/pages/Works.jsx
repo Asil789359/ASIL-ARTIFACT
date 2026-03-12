@@ -8,11 +8,11 @@ import lerp from "@14islands/lerp"
 import { useMediaQuery } from "beautiful-react-hooks"
 
 import projectsData from "../../projectsData"
-import ArrowSVG from "../../assets/icons/arrow.svg?component"
+import ArrowSVG from "../../assets/icons/arrow.svg?react"
 import { mfIsHoveringCanvas } from "../../store"
 import { mapRange } from "gsap/gsap-core"
 import gsap from "gsap"
-import { useHistory } from "react-router"
+import { useNavigate } from "react-router-dom"
 import PageTemplate from "./PageTemplate"
 import DistortionMaterial from "../shared/three/DistortionMaterial"
 
@@ -204,7 +204,7 @@ function ShaderPlane(props) {
       props.index * ((scrollArea.current.children[0].offsetHeight - window.innerHeight) / (projectsData.length - 1))
 
     setTimeout(() => {
-      props.history.push(`/works/${props.project.path}`)
+      props.navigate(`/works/${props.project.path}`)
     }, 300)
   }
 
@@ -293,7 +293,7 @@ const Scene = ({ history }) => {
           key={project.name + index}
           texture={covers[index]}
           project={projectsData[index]}
-          history={history}
+          navigate={navigate}
         />
       ))}
     </group>
@@ -301,7 +301,7 @@ const Scene = ({ history }) => {
 }
 
 const Works = () => {
-  const history = useHistory()
+  const navigate = useNavigate()
 
   const scrollValue = useRef(0)
   const scrollProgressBar = useRef(null)

@@ -1,6 +1,6 @@
 import gsap from "gsap/all";
 import React, { useState, useEffect, useRef, useCallback } from "react";
-import { useHistory } from "react-router";
+import { useNavigate } from "react-router-dom";
 import styled, { useTheme } from "styled-components";
 import projectsData from "../../projectsData";
 
@@ -50,7 +50,7 @@ const Slider = (props) => {
 
   const [hasLoaded, setHasLoaded] = useState(false);
 
-  const history = useHistory();
+  const navigate = useNavigate();
 
   useEffect(() => {
     let interval;
@@ -87,8 +87,8 @@ const Slider = (props) => {
     });
   }, [theme]);
 
-  // const goToProject = () => history.push(`/works/${projectsData[projectImageIndex].path}`)
-  const goToProject = () => history.push("/works");
+  // const goToProject = () => navigate(`/works/${projectsData[projectImageIndex].path}`)
+  const goToProject = () => navigate("/works");
 
   return (
     <StyledSlider {...props}>

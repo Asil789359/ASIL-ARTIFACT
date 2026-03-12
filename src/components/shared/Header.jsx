@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 // import katy from "./../../assets/img/katy.svg";
 import { Link, NavLink } from "react-router-dom";
-import Mail from "../../assets/icons/mail.svg?component";
+import Mail from "../../assets/icons/mail.svg?react";
 import { globalPadding } from "../../styles/globalCustom";
 
 const StyledHeader = styled.div`

@@ -1,9 +1,10 @@
-const { defineConfig } = require('vite');
-const reactSvgPlugin = require('vite-plugin-react-svg');
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import svgr from 'vite-plugin-svgr'
 
-module.exports = defineConfig({
-  plugins: [reactSvgPlugin()],
+export default defineConfig({
+  plugins: [react(), svgr()],
   server: {
     port: 3001,
   },
-});
+})

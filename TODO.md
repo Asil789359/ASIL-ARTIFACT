@@ -1,14 +1,13 @@
-# Portfolio Rebranding TODO
+# Task Progress: Fix npm warnings (deprecated mini-create-react-context & .npmignore missing)
 
-## Plan Breakdown
-1. [x] Create TODO.md 
-2. [x] Edit src/components/shared/Header.jsx (name, location)
-3. [x] Edit src/components/pages/About/About.jsx (hero title, bio, remove Twitch)
-4. [x] Edit src/components/shared/Footer.jsx (social links, contact phone)
-5. [x] Edit src/components/pages/Courses/Courses.jsx (remove Twitch mention)
-6. [x] Edit src/components/pages/Legals/Mentions.jsx (name, contact)
-7. [x] Edit src/components/pages/Legals/CGV.jsx (name)
-8. [x] Test: Dev server ready (vite requires node_modules; run `npm install --legacy-peer-deps` if deps conflict, then `npm run dev`)
-9. [x] Complete task
+## Completed Steps:
+- [x] 1. Create `.npmignore` mirroring `.gitignore`
+- [x] 2. Update `package.json` dependencies and scripts (react-router-dom v6, Vite 5, etc.)
+- [x] 3. Edit `src/App.jsx` for react-router v6 migration (Switch->Routes, component->element)
+- [x] 4. Update `vite.config.js` for Vite 5 + delete vite.config.mjs
 
-**Status**: Starting edits...
+## Pending Steps (from approved plan):
+- [ ] 5. Delete package-lock.json/node_modules && npm install
+- [ ] 6. Test `npm run dev`
+
+**Next:** Execute step 5 (run commands).
